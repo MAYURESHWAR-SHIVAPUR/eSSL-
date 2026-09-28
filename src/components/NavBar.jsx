@@ -1,0 +1,56 @@
+import React from 'react'
+import logo from "../assets/logo/logo.png"
+import { useEffect } from 'react'
+import { fadeIn } from "../animation/Nav";
+
+const NavBar = () => {
+  const [hide, setHidden] = React.useState(true);
+
+
+    useEffect(() => {
+        fadeIn()
+    }, [])
+
+  return (
+    <div className="px-4 flex items-center justify-between">
+      <img id="nav1" className="h-16 hover:scale-105 transition duration-300" src={logo} alt="Logo" />
+      <article className="flex items-center justify-center h-10 border border-black">
+        <input id="nav2" type="text" placeholder="Search Products..." className="h-full  focus:outline-none px-5" />
+        <button id="nav2"  className=" h-full bg-black text-white px-4 py-1 rounded hover:bg-white hover:text-black border-2 hover:border-black">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </article>
+
+      <div id='nav3' className="flex items-center space-x-4">
+        <a href="#" className="text-black hover:text-gray-700">Cloud HID</a>
+        <a href="#" className="text-black hover:text-gray-700">NFC</a>
+        <a href="#" className="text-black hover:text-gray-700">eTimeTrackLite</a>
+        <a href="#" className="text-black hover:text-gray-700">Software Videos</a>
+        <a href="#" className="text-black hover:text-gray-700">3rd Party Software Integration</a>
+        <a href="#" className="text-black hover:text-gray-700">Careers</a>
+        <a href="#" className="text-black hover:text-gray-700">Contact Us</a>
+        <a href="#" className="text-black hover:text-gray-700"></a>
+        <button
+          type="button"
+          onClick={() => setHidden(!hide)}
+          className="text-black hover:text-gray-700 text-xl"
+        >
+          <i className="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <div hidden={hide} id="menu" className=" flex flex-col justify-evenly gap-4 text-xl font-bold space-x-4 h-[90%] w-1/8 bg-white absolute top-16 right-0 border border-black px-4 py-2 z-99 bg-white bg-emerald-500/15 backdrop-blur-lg border border-emerald-300/30 rounded-xl p-6 shadow-xl">
+        <a href="#" className="hover:text-black text-gray-700 hover:underline">Fingerprint</a>
+        <a href="#" className="hover:text-black text-gray-700 hover:underline">Face </a>
+        <a href="#" className="hover:text-black text-gray-700 hover:underline">Boom Barrier </a>
+        <a href="#" className="hover:text-black text-gray-700 hover:underline">Turnstiles </a>
+        <a href="#" className="hover:text-black text-gray-700 hover:underline">Flap Barriers </a>
+        <a href="#" className="hover:text-black text-gray-700 hover:underline">More Products </a>
+        <a href="#" className="text-black hover:text-gray-700 hover:underline">Downloads</a>
+        <a href="#" className="text-black hover:text-gray-700 hover:underline">CSR</a>
+      </div>
+    </div>
+  )
+}
+
+export default NavBar

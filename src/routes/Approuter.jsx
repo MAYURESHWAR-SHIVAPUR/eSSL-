@@ -1,23 +1,14 @@
 import React from 'react'
 import Landing from "../pages/Landing/Landing"
-import About from "../pages/About/About"
-import Contact from "../pages/Contact Us/Contact"
 import NotFound from "../pages/NotFound/NotFound";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import Butterfly from "../components/butterfly";
+import Intro from "../pages/Intro";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Landing />
-    },
-    {
-        path: "/About",
-        element: <About />
-    },
-    {
-        path: "/Contact",
-        element: <Contact />
     },
     {
         path: "*",
@@ -26,9 +17,21 @@ const router = createBrowserRouter([
 ]);
 
 const Approuter = () => {
+    const [intro, setIntro] = React.useState(true);
+    
+    React.useEffect(() => {
+        const timer = setTimeout(() => {
+            setIntro(false);
+        }, 0);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
-            <RouterProvider router={router} />
+            <Butterfly />
+
+            { intro ? <Intro /> : <RouterProvider router={router} />}
         </>
     )
 }

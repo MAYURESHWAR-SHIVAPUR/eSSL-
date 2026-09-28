@@ -1,16 +1,24 @@
 import React from 'react'
 import Style from "./Landing.module.css"
+import NavBar from '../../components/NavBar'
+import Hero from '../../components/Hero'
+import About from '../../components/About'
+import Footer from '../../components/footer'
+import Achive from '../../components/achive'
+import Explore from '../../components/Explore'
+import Model from '../../components/Model'
 
 const Landing = () => {
   return (
     <div>
-      <h1>This is landing page
-        <i class="fa-regular fa-house"></i>
-      </h1>
-      <h1 className="text-4xl font-bold text-blue-600">
-        Tailwind v4 is working
-      </h1>
+      <NavBar />
+      <Hero />
 
+      <Explore />
+      <About />
+      <Achive />
+      <Model />
+      <Footer />
     </div>
   )
 }
