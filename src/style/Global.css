@@ -1,0 +1,18 @@
+.animate{
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        scale: 1;
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+        scale: 1.5;
+    }
+    100% {
+        scale: 1;
+        transform: rotate(360deg);
+    }
+}

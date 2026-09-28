@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import {butterfly} from "../animation/Butterfly.js"
+import move from "../../public/move.png"
 
 const ButterflyComponent = () => {
     useEffect(() => {
@@ -24,7 +25,8 @@ const ButterflyComponent = () => {
         };
     }, []);
     return (
-        <div className="butterfly fixed top-0 left-0 w-10 h-10 z-999 bg-black pointer-events-none" id="butterfly">
+        <div className="butterfly fixed top-0 left-0 w-20 h-20 z-999 rounded-full overflow-hidden bg-black pointer-events-none" id="butterfly">
+            <img className="w-full h-full rounded-full object-cover scale-200 animate" src={move} alt="" />
         </div>
     )
 }
