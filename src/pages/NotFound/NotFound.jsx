@@ -1,5 +1,4 @@
 import React from 'react'
-import Style from "./NotFound.module.css"
 
 const NotFound = () => {
   return (
