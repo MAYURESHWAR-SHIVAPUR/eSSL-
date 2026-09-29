@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import {butterfly} from "../animation/Butterfly.js"
 import move from "../../public/move.png"
 
 const ButterflyComponent = () => {
