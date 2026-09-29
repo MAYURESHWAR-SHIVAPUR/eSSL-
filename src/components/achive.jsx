@@ -1,4 +1,4 @@
-import React from 'react'
+import {AchiveData} from "../data/index.js"
 
 const achive = () => {
     return (
@@ -15,7 +15,7 @@ const achive = () => {
 
                         <div>
                             <h3 className="text-3xl font-bold leading-none text-white">
-                                80000+
+                                {AchiveData.projects}
                             </h3>
 
                             <p className="mt-1 text-sm text-white">
@@ -33,7 +33,7 @@ const achive = () => {
 
                         <div>
                             <h3 className="text-3xl font-bold leading-none text-white">
-                                24+
+                                {AchiveData.experience}
                             </h3>
 
                             <p className="mt-1 text-sm text-white">
@@ -51,7 +51,7 @@ const achive = () => {
 
                         <div>
                             <h3 className="text-3xl font-bold leading-none text-white">
-                                4000000+
+                                {AchiveData.customers}
                             </h3>
 
                             <p className="mt-1 text-sm text-white">

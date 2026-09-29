@@ -1,6 +1,6 @@
 import React from 'react'
-import Landing from "../pages/Landing/Landing"
-import NotFound from "../pages/NotFound/NotFound";
+import Landing from "../pages/Landing"
+import NotFound from "../pages/NotFound";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Butterfly from "../components/butterfly";
 import Intro from "../pages/Intro";

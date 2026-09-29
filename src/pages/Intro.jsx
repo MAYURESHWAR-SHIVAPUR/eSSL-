@@ -1,6 +1,7 @@
 import finger from "../../public/finger.png"
 import { useEffect } from "react"
 import { animateIntro } from "../animation/intro"
+import { introData } from "../data"
 
 const Intro = () => {
 
@@ -50,31 +51,31 @@ const Intro = () => {
 
                 {/* INITIALIZING TEXT */}
                 <p id="intro-notice1" className="mb-4 text-[8px] font-semibold tracking-[0.35em] text-cyan-400/70">
-                    INITIALIZING SECURE ACCESS
+                    {introData["small-title"]}
                 </p>
 
 
                 {/* LOGO / NAME */}
                 <h1 id="intro-name" className="text-[70px] font-black leading-none tracking-[0.04em] text-white drop-shadow-[0_0_32px_rgba(0,200,255,1)] md:text-[82px]">
-                    <span className="inline-block">e</span>
-                    <span className="text-cyan-400 inline-block">S</span>
-                    <span className="inline-block">S</span>
-                    <span className="text-cyan-400 inline-block">L</span>
+                    <span className="inline-block">{introData["title-one"]}</span>
+                    <span className="text-cyan-400 inline-block">{introData["title-two"]}</span>
+                    <span className="inline-block">{introData["title-three"]}</span>
+                    <span className="text-cyan-400 inline-block">{introData["title-four"]}</span>
                 </h1>
 
 
                 {/* TAGLINE */}
                 <h2 id="intro-notice2" className="mt-4 text-[13px] font-bold tracking-[0.25em] text-cyan-400 md:text-[14px]">
-                    <span className="inline-block text-cyan-400 mr-2">SECURITY</span>
-                    <span className="inline-block text-cyan-400 mr-2"> AT </span>
-                    <span className="inline-block text-cyan-400 mr-2">YOUR </span>
-                    <span className="inline-block text-cyan-400 mr-2">FINGERTIPS</span>
+                    <span className="inline-block text-cyan-400 mr-2">{introData["tagline-one"]}</span>
+                    <span className="inline-block text-cyan-400 mr-2">{introData["tagline-two"]}</span>
+                    <span className="inline-block text-cyan-400 mr-2">{introData["tagline-three"]}</span>
+                    <span className="inline-block text-cyan-400 mr-2">{introData["tagline-four"]}</span>
                 </h2>
 
 
                 {/* DESCRIPTION */}
                 <p id="intro-description" className="mt-3 text-[8px] text-gray-400">
-                    Biometric & Time-Attendance Technology
+                    {introData["description"]}
                 </p>
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/logo/logo.png"
+import { footerData } from '../data'
 
 const footer = () => {
     return (
@@ -14,7 +14,7 @@ const footer = () => {
                         <div className="mb-6 flex h-[55px] w-[110px] items-center">
                             {/* Add your logo here */}
                             <img
-                                src={logo}
+                                src={footerData.img}
                                 alt="eSSL Logo"
                                 className="max-h-[55px] max-w-[110px] object-contain"
                             />
@@ -29,14 +29,11 @@ const footer = () => {
                         </div>
 
                         <p className="max-w-[310px] text-[10px] leading-[1.8] text-gray-300">
-                            eSSL is India's Market leader in the field of Biometrics and Access
-                            Control since 2002.
+                            {footerData.description1}
                         </p>
 
                         <p className="mt-4 max-w-[310px] text-[10px] leading-[1.8] text-gray-300">
-                            eSSL serves over 400000 Customers in India and Worldwide across
-                            different Sectors such as Government, Education, Hospitality, Retail,
-                            Public Facilities, etc..
+                            {footerData.description2}
                         </p>
 
                         {/* SOCIAL MEDIA */}
@@ -163,17 +160,18 @@ const footer = () => {
                         <div className="text-[10px] leading-[1.8] text-gray-300">
 
                             <p>
-                                #24 Shambavi Building 23rd Main
-                                <br />
-                                Marenahalli JP Nagar 2nd Phase
-                                <br />
-                                Bengaluru - 560078
+                                {footerData.address.map((line, index) => (
+                                    <span key={index}>
+                                        {line}
+                                        <br />
+                                    </span>
+                                ))}
                             </p>
 
                             <div className="mt-3 space-y-1">
                                 <p className="flex items-center gap-2">
                                     <span className="text-blue-400">☎</span>
-                                    +91 08046159990
+                                    {footerData.phone}
                                 </p>
 
                                 <a
@@ -181,7 +179,7 @@ const footer = () => {
                                     className="flex items-center gap-2 text-blue-400 hover:text-blue-300"
                                 >
                                     <span>✉</span>
-                                    sales@esslsecurity.com
+                                    {footerData.email}
                                 </a>
 
                                 <a
@@ -189,7 +187,7 @@ const footer = () => {
                                     className="flex items-center gap-2 text-blue-400 hover:text-blue-300"
                                 >
                                     <span>✉</span>
-                                    support@esslsecurity.com
+                                    {footerData.email}
                                 </a>
                             </div>
 
