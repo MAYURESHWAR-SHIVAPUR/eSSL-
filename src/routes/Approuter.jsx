@@ -22,7 +22,7 @@ const Approuter = () => {
     React.useEffect(() => {
         const timer = setTimeout(() => {
             setIntro(false);
-        }, 5000);
+        }, 0);
 
         return () => clearTimeout(timer);
     }, []);

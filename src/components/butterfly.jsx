@@ -25,7 +25,7 @@ const ButterflyComponent = () => {
         };
     }, []);
     return (
-        <div className="butterfly fixed top-0 left-0 w-20 h-20 z-999 rounded-full overflow-hidden bg-black pointer-events-none" id="butterfly">
+        <div className="butterfly fixed top-0 left-0 w-20 h-20 z-999 rounded-full overflow-hidden bg-black pointer-events-none hidden lg:block" id="butterfly">
             <img className="w-full h-full rounded-full object-cover scale-200 animate" src={move} alt="" />
         </div>
     )

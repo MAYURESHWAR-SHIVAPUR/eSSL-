@@ -21,7 +21,7 @@ const NavBar = () => {
         </button>
       </article>
 
-      <div id='nav3' className="flex items-center space-x-4">
+      <div id='nav3'  className="flex items-center space-x-4 hidden lg:block">
         <a href="#" className="text-black hover:text-gray-700">Cloud HID</a>
         <a href="#" className="text-black hover:text-gray-700">NFC</a>
         <a href="#" className="text-black hover:text-gray-700">eTimeTrackLite</a>

@@ -20,9 +20,9 @@ useGLTF.preload('/model.glb');
 
 export default function App() {
     return (
-        <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center min-h-screen h-fit">
 
-            <div className='' style={{ width: '50vw', height: '100vh', background: '#002335' }}>
+            <div className='md:block hidden' style={{ width: '50vw', height: '100vh', background: '#002335' }}>
                 <Canvas camera={{ position: [2, 2, 3], fov: 50 }}>
                     {/* Basic lighting */}
                     <ambientLight intensity={0.5} scale={3} />
@@ -41,7 +41,7 @@ export default function App() {
                     <OrbitControls makeDefault enableDamping autoRotate rotationSpeed={200} />
                 </Canvas>
             </div>
-            <div className='w-1/2 h-screen flex items-center justify-center'>
+            <div className='md:w-1/2 w-full h-full flex items-center justify-center'>
                 <Form />
             </div>
         </div>

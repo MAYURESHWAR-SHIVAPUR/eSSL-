@@ -18,7 +18,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="w-full h-screen overflow-hidden bg-white px-6 py-8 md:px-16">
+    <section className="w-full h-full overflow-hidden bg-white px-6 py-8 md:px-16">
 
       <div className="mx-auto max-w-[1080px]">
 

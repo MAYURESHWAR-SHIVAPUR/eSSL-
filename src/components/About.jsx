@@ -2,9 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="py-[3%] h-screen">
+    <div className="py-[3%] min-h-screen h-fit">
       <h1 className="text-5xl font-extrabold text-gray-800 mb-[3%] text-center hover:underline" >About Us</h1>
-      <section className="flex justify-evenly  items-center">
+      <section className="flex flex-col md:flex-row gap-6 justify-evenly  items-center">
         <img className="bg-gray-200 border-2 border-dashed rounded-xl w-64 h-64 hover:scale-105 transition duration-300" />
         <img className="bg-gray-200 border-2 border-dashed rounded-xl w-64 h-64 hover:scale-105 transition duration-300" />
         <img className="bg-gray-200 border-2 border-dashed rounded-xl w-64 h-64 hover:scale-105 transition duration-300" />
