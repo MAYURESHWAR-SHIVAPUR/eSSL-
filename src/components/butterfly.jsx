@@ -7,7 +7,7 @@ const ButterflyComponent = () => {
         const butterflyElement = document.querySelector('.butterfly');
 
         function handleMouseMove(e) {
-            const X = e.clientX + 10 ;
+            const X = e.clientX  ;
             const Y = e.clientY ;
 
             if (butterflyElement) {
@@ -24,7 +24,7 @@ const ButterflyComponent = () => {
         };
     }, []);
     return (
-        <div className="butterfly fixed top-0 left-0 w-20 h-20 z-999 rounded-full overflow-hidden bg-black pointer-events-none hidden lg:block" id="butterfly">
+        <div className="butterfly absolute bg-black top-0 left-0 w-20 h-20 z-999 rounded-full overflow-hidden pointer-events-none hidden lg:block" id="butterfly">
             <img className="w-full h-full rounded-full object-cover scale-200 animate" src={move} alt="" />
         </div>
     )

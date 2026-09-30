@@ -2,7 +2,7 @@ import {ExploreData} from "../data/index.js"
 
 const Explore = () => {
     return (
-        <div class="h-[120vh] w-full bg-gradient-to-b from-white from-50% to-[#252D39] to-50%">
+        <div class="min-h-[120vh] h-fit overflow-hidden w-full bg-gradient-to-b from-white from-50% to-[#252D39] to-50%">
             <h1 className='text-center font-extrabold text-5xl hover:underline'>{ExploreData.title}</h1>
             <p className="text-center text-md text-gray-600 px-4 py-2 mb-[5%]">
                 {ExploreData.description}

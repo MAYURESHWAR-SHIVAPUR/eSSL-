@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Approuter from "./routes/Approuter"
+import Error from './pages/Error'
 
 const App = () => {
+  const [size, _] = useState(window.innerWidth >= 1023)
   return (
-    <Approuter />
+    <>
+      {size ? <Approuter /> : <Error />}
+    </>
   )
 }
 

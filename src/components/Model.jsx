@@ -20,7 +20,7 @@ useGLTF.preload('/model.glb');
 
 export default function App() {
     return (
-        <div className="flex items-center justify-center min-h-screen h-fit">
+        <div className="flex items-center justify-center min-h-screen h-full">
 
             <div className='md:block hidden' style={{ width: '50vw', height: '100vh', background: '#002335' }}>
                 <Canvas camera={{ position: [2, 2, 3], fov: 50 }}>
