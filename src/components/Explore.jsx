@@ -1,4 +1,7 @@
 import {ExploreData} from "../data/index.js"
+import img1 from "../../public/I1.png"
+import img2 from "../../public/I2.png"
+import img3 from "../../public/I3.png"
 
 const Explore = () => {
     return (
@@ -16,7 +19,7 @@ const Explore = () => {
                     {/* CENTER IMAGE */}
                     <div className="absolute rounded-2xl left-1/2 top-0 z-20 w-[52%] -translate-x-1/2 border-[38px] border-[#8a8a8a] md:border-[38px] box-shadow-[0_0_20px_rgba(0,0,0,0.5)] hover:scale-105 hover:rotate-3 hover:z-99 transition duration-300">
                         <img
-                            src={ExploreData.img1}
+                            src={img1}
                             alt="eSSL"
                             className="block h-full w-full object-cover"
                         />
@@ -26,7 +29,7 @@ const Explore = () => {
                     {/* LEFT IMAGE */}
                     <div className="absolute left-0 top-[103px] z-30 w-[34%] rounded-xl border-[25px] border-[#a8a8a8] md:border-[26px] box-shadow-[0_0_20px_rgba(0,0,0,0.5)] hover:scale-105 rotate-355 hover:z-99 transition duration-300">
                         <img
-                            src={ExploreData.img2}
+                            src={img2}
                             alt="eSSL"
                             className="block aspect-[1.5/1] w-full object-cover"
                         />
@@ -36,7 +39,7 @@ const Explore = () => {
                     {/* RIGHT IMAGE */}
                     <div className="absolute right-0 top-[103px] z-30 w-[34%] rounded-xl border-[25px] border-[#a8a8a8] md:border-[26px] box-shadow-[0_0_20px_rgba(0,0,0,0.5)] hover:scale-105 rotate-3 hover:z-99 transition duration-300">
                         <img
-                            src={ExploreData.img3}
+                            src={img3}
                             alt="eSSL"
                             className="block aspect-[1.5/1] w-full object-cover"
                         />

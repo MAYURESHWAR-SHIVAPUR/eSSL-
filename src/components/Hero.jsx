@@ -1,5 +1,5 @@
 import React from 'react'
-// import hero from "../../public/hero.png"
+import hero from "../../public/hero.png"
 import { useEffect } from 'react'
 import { H } from "../animation/Hero.js";
 import {HeroData} from "../data/index.js"
@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="relative w-full h-[120vh]">
       <div className="md:w-3/4 w-screen   h-fit md:p-8 p-2 bg-[#252d39] mt-5 relative md:left-1/2 md:transform md:-translate-x-1/2 rounded-xl overflow-hidden ">
 
-      <img id="hero" src={HeroData.img} alt="Hero " className="w-full rounded-lg object-cover " />
+      <img id="hero" src={hero} alt="Hero " className="w-full rounded-lg object-cover " />
       </div>
 
       <section id="hero-notice1" className="md:flex items-center justify-evenly mt-5 py-5">
